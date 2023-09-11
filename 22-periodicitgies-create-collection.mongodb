@@ -1,0 +1,29 @@
+use("4Invoices");
+
+db.createCollection("periodicities", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi periodicities - c_Periodicidad",
+      required: [
+        "periodicity",
+        "description",
+        "start_validity_date",
+      ],
+      properties: {
+        periodicity: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

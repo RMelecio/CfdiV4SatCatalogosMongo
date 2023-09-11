@@ -1,0 +1,54 @@
+use("4Invoices");
+
+db.createCollection("rate_fees", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi rate or fee - c_TasaOCuota",
+      required: [
+        "range_or_fixed",
+        "rate_fee",
+        "tax",
+        "factor",
+        "transfer",
+        "retention",
+        "start_validity_date"
+      ],
+      properties: {
+        range_or_fixed: {
+          bsonType: "string",
+        },
+        rate_fee: {
+          bsonType: "object",
+          required: ["max_value"],
+          properties: {
+            min_value: {
+              bsonType: "string",
+            },
+            max_value: {
+              bsonType: "string"
+            }
+          }
+        },
+        tax: {
+          bsonType: "string",
+        },
+        factor: {
+          bsonType: "string",
+        },
+        transfer: {
+          bsonType: "string",
+        },
+        retention: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

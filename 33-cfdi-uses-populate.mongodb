@@ -1,0 +1,269 @@
+use("4Invoices");
+db.getCollection("cfdi_uses").insertMany([
+    {
+      cfdi_use: "G01",
+      description: "Adquisición de mercancías.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625","626"]
+    },
+    {
+      cfdi_use: "G02",
+      description: "Devoluciones, descuentos o bonificaciones.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "616", "620", "621", "622", "623", "624", "625","626"]
+    },
+    {
+      cfdi_use: "G03",
+      description: "Gastos en general.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I01",
+      description: "Construcciones.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I02",
+      description: "Mobiliario y equipo de oficina por inversiones.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I03",
+      description: "Equipo de transporte.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I04",
+      description: "Equipo de computo y accesorios.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I05",
+      description: "Dados, troqueles, moldes, matrices y herramental.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I06",
+      description: "Comunicaciones telefónicas.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I07",
+      description: "Comunicaciones satelitales.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "I08",
+      description: "Otra maquinaria y equipo.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "606", "612", "620", "621", "622", "623", "624", "625", "626"]
+    },
+    {
+      cfdi_use: "D01",
+      description: "Honorarios médicos, dentales y gastos hospitalarios.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D02",
+      description: "Gastos médicos por incapacidad o discapacidad.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D03",
+      description: "Gastos funerales.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D04",
+      description: "Donativos.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D05",
+      description:
+        "Intereses reales efectivamente pagados por créditos hipotecarios (casa habitación).",
+      peron_type_applies: {
+        physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D06",
+      description: "Aportaciones voluntarias al SAR.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D07",
+      description: "Primas por seguros de gastos médicos.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D08",
+      description: "Gastos de transportación escolar obligatoria.",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D09",
+      description:
+        "Depósitos en cuentas para el ahorro, primas que tengan como base planes de pensiones.",
+      peron_type_applies: {
+        physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "D10",
+      description: "Pagos por servicios educativos (colegiaturas).",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["605", "606", "608", "611", "612", "614", "607", "615", "625"]
+    },
+    {
+      cfdi_use: "S01",
+      description: "Sin efectos fiscales.  ",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "605", "606", "608", "610", "611", "612", "614", "616", "620", "621", "622", "623", "624", "607", "615", "625", "626"]
+    },
+    {
+      cfdi_use: "CP01",
+      description: "Pagos",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "Sí",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver: ["601", "603", "605", "606", "608", "610", "611", "612", "614", "616", "620", "621", "622", "623", "624", "607", "615", "625", "626"]
+    },
+    {
+      cfdi_use: "CN01",
+      description: "Nómina",
+      peron_type_applies: {
+      physical: "Sí",
+      moral: "No",
+      },
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+      tax_regime_receiver:["605"]
+    }
+  ])

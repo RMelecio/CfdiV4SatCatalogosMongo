@@ -1,0 +1,16 @@
+use("4Invoices");
+db.payment_methods.drop();
+db.getCollection("payment_methods").insertMany([
+    {
+      payment_method: "PUE",
+      description: "Pago en una sola exhibición",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      payment_method: "PPD",
+      description: "Pago en parcialidades o diferido",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+  ]);

@@ -1,0 +1,34 @@
+use("4Invoices");
+db.periodicities.drop();
+db.getCollection("periodicities").insertMany([
+    {
+      periodicity: "01",
+      description: "Diario",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      periodicity: "02",
+      description: "Semanal",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      periodicity: "03",
+      description: "Quincenal",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      periodicity: "04",
+      description: "Mensual",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      periodicity: "05",
+      description: "Bimestral",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+  ]);

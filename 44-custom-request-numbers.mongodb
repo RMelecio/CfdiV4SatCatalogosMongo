@@ -1,0 +1,37 @@
+use("4Invoices");
+
+db.createCollection("custom_request_numbers", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi custom request numbers - c_NumPedimentoAduana",
+      required: [
+        "custom",
+        "patent",
+        "fiscal_year",
+        "quantity",
+        "start_validity_date"
+      ],
+      properties: {
+        custom: {
+          bsonType: "string",
+        },
+        patent: {
+          bsonType: "string",
+        },
+        fiscal_year: {
+          bsonType: "string",
+        },
+        quantity: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "date",
+        },
+        end_validity_date: {
+          bsonType: "date",
+        },
+      }
+    }
+  }
+});

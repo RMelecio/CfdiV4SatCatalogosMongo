@@ -1,0 +1,29 @@
+use("4Invoices");
+
+db.createCollection("months", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi months - c_Meses",
+      required: [
+        "month",
+        "description",
+        "start_validity_date",
+      ],
+      properties: {
+        month: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

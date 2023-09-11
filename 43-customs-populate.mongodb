@@ -1,0 +1,305 @@
+use("4Invoices");
+db.customs.drop();
+db.getCollection("customs").insertMany([
+  {
+    custom: "01",
+    description: "ACAPULCO, ACAPULCO DE JUAREZ, GUERRERO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "02",
+    description: "AGUA PRIETA, AGUA PRIETA, SONORA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "05",
+    description: "SUBTENIENTE LOPEZ, SUBTENIENTE LOPEZ, QUINTANA ROO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "06",
+    description: "CIUDAD DEL CARMEN, CIUDAD DEL CARMEN, CAMPECHE.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "07",
+    description: "CIUDAD JUAREZ, CIUDAD JUAREZ, CHIHUAHUA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "08",
+    description: "COATZACOALCOS, COATZACOALCOS, VERACRUZ.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "11",
+    description: "ENSENADA, ENSENADA, BAJA CALIFORNIA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "12",
+    description: "GUAYMAS, GUAYMAS, SONORA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "14",
+    description: "LA PAZ, LA PAZ, BAJA CALIFORNIA SUR.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "16",
+    description: "MANZANILLO, MANZANILLO, COLIMA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "17",
+    description: "MATAMOROS, MATAMOROS, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "18",
+    description: "MAZATLAN, MAZATLAN, SINALOA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "19",
+    description: "MEXICALI, MEXICALI, BAJA CALIFORNIA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "20",
+    description: "MEXICO, DISTRITO FEDERAL.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "22",
+    description: "NACO, NACO, SONORA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "23",
+    description: "NOGALES, NOGALES, SONORA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "24",
+    description: "NUEVO LAREDO, NUEVO LAREDO, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "25",
+    description: "OJINAGA, OJINAGA, CHIHUAHUA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "26",
+    description: "PUERTO PALOMAS, PUERTO PALOMAS, CHIHUAHUA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "27",
+    description: "PIEDRAS NEGRAS, PIEDRAS NEGRAS, COAHUILA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "28",
+    description: "PROGRESO, PROGRESO, YUCATAN.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "30",
+    description: "CIUDAD REYNOSA, CIUDAD REYNOSA, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "31",
+    description: "SALINA CRUZ, SALINA CRUZ, OAXACA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "33",
+    description: "SAN LUIS RIO COLORADO, SAN LUIS RIO COLORADO, SONORA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "34",
+    description: "CIUDAD MIGUEL ALEMAN, CIUDAD MIGUEL ALEMAN, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "37",
+    description: "CIUDAD HIDALGO, CIUDAD HIDALGO, CHIAPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "38",
+    description: "TAMPICO, TAMPICO, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "39",
+    description: "TECATE, TECATE, BAJA CALIFORNIA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "40",
+    description: "TIJUANA, TIJUANA, BAJA CALIFORNIA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "42",
+    description: "TUXPAN, TUXPAN DE RODRIGUEZ CANO, VERACRUZ.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "43",
+    description: "VERACRUZ, VERACRUZ, VERACRUZ.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "44",
+    description: "CIUDAD ACUÑA, CIUDAD ACUÑA, COAHUILA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "46",
+    description: "TORREON, TORREON, COAHUILA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "47",
+    description: "AEROPUERTO INTERNACIONAL DE LA CIUDAD DE MEXICO,",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "48",
+    description: "GUADALAJARA, TLACOMULCO DE ZUÑIGA, JALISCO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "50",
+    description: "SONOYTA, SONOYTA, SONORA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "51",
+    description: "LAZARO CARDENAS, LAZARO CARDENAS, MICHOACAN.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "52",
+    description: "MONTERREY, GENERAL MARIANO ESCOBEDO, NUEVO LEON.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "53",
+    description: "CANCUN, CANCUN, QUINTANA ROO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "64",
+    description: "QUERÉTARO, EL MARQUÉS Y COLON, QUERÉTARO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "65",
+    description: "TOLUCA, TOLUCA, ESTADO DE MEXICO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "67",
+    description: "CHIHUAHUA, CHIHUAHUA, CHIHUAHUA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "73",
+    description: "AGUASCALIENTES, AGUASCALIENTES, AGUASCALIENTES.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "75",
+    description: "PUEBLA, HEROICA PUEBLA DE ZARAGOZA, PUEBLA.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "80",
+    description: "COLOMBIA, COLOMBIA, NUEVO LEON.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "81",
+    description: "ALTAMIRA, ALTAMIRA, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "82",
+    description: "CIUDAD CAMARGO, CIUDAD CAMARGO, TAMAULIPAS.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "83",
+    description: "DOS BOCAS, PARAISO, TABASCO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "84",
+    description: "GUANAJUATO, SILAO, GUANAJUATO.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    custom: "85",
+    description:
+      "AEROPUERTO INTERNACIONAL FELIPE ÁNGELES, SANTA LUCÍA, ZUMPANGO, ESTADO DE MÉXICO.",
+    start_validity_date: "2023-01-13",
+    end_validity_date: null
+  }
+])

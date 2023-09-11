@@ -1,0 +1,48 @@
+use("4Invoices");
+
+db.createCollection("cfdi_uses", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi cfdi uses - c_UsoCFDI",
+      required: [
+        "cfdi_use",
+        "description",
+        "person_type_applies",
+        "start_validity_date",
+      ],
+      properties: {
+        cfdi_use: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        person_type_applies: {
+            bsonType: "object",
+            required: ["physical", "moral"],
+            properties: {
+              physical: {
+                bsonType: "string",
+              },
+              moral: {
+                bsonType: "string",
+              }
+            }
+        },
+        start_validity_date: {
+            bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+        tax_regime_receiver: {
+          bsonType: "array",
+          items: {
+            bsonType: "string",
+          }
+        },
+      }
+    }
+  }
+});

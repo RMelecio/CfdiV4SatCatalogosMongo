@@ -1,0 +1,76 @@
+use("4Invoices");
+db.months.drop();
+db.getCollection("months").insertMany([
+    {
+      month: "01",
+      description: "Enero",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      month: "02",
+      description: "Febrero",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      month: "03",
+      description: "Marzo",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      month: "04",
+      description: "Abril",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      month: "05",
+      description: "Mayo",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+        month: "06",
+        description: "Junio",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+      {
+        month: "07",
+        description: "Julio",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+      {
+        month: "08",
+        description: "Agosto",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+      {
+        month: "09",
+        description: "Septiembre",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+      {
+        month: "10",
+        description: "Octubre",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+      {
+        month: "11",
+        description: "Noviembre",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+      {
+        month: "12",
+        description: "Diciembre",
+        start_validity_date: "2022-01-01",
+        end_validity_date: null
+      },
+  ]);

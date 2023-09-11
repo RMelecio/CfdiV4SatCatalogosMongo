@@ -1,0 +1,36 @@
+use("4Invoices");
+
+db.createCollection("invoice_types", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi invoice types - c_TipoDeComprobante",
+      required: [
+        "invoice_type",
+        "description",
+        "max_value",
+        "start_validity_date",
+      ],
+      properties: {
+        invoice_type: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        max_value: {
+          bsonType: "array",
+          items: {
+            bsonType: "string"
+          }
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

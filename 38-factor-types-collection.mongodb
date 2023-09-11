@@ -1,0 +1,25 @@
+use("4Invoices");
+
+db.createCollection("factor_types", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi factor types - c_TipoFactor",
+      required: [
+        "factor_type",
+        "start_validity_date"
+      ],
+      properties: {
+        factor_type: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

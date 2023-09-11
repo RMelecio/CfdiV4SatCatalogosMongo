@@ -1,0 +1,2 @@
+use("4Invoices");
+db.custom_patents.drop();

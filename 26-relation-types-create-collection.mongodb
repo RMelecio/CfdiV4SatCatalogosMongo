@@ -1,0 +1,29 @@
+use("4Invoices");
+
+db.createCollection("relation_types", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi relation types - c_TipoRelacion",
+      required: [
+        "relationTypes",
+        "description",
+        "start_validity_date",
+      ],
+      properties: {
+        relation_type: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

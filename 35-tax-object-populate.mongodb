@@ -1,0 +1,28 @@
+use("4Invoices");
+db.tax_object.drop();
+db.getCollection("tax_object").insertMany([
+    {
+      tax_object: "01",
+      description: "No objeto de impuesto.",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+    },
+    {
+      tax_object: "02",
+      description: "Sí objeto de impuesto.",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+    },
+    {
+      tax_object: "03",
+      description: "Sí objeto del impuesto y no obligado al desglose.",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null,
+    },
+    {
+      tax_object: "04",
+      description: "Sí objeto del impuesto y no causa impuesto.",
+      start_validity_date: "2022-10-07",
+      end_validity_date: null,
+    }
+  ]);

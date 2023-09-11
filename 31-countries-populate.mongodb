@@ -1,0 +1,2006 @@
+use("4Invoices");
+db.countries.drop();
+db.getCollection("countries").insertMany([
+    {
+      country: "AFG",
+      description: "Afganistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ALA",
+      description: "Islas Åland",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ALB",
+      description: "Albania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "DEU",
+      description: "Alemania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "AND",
+      description: "Andorra",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "AGO",
+      description: "Angola",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "AIA",
+      description: "Anguila",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ATA",
+      description: "Antártida",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ATG",
+      description: "Antigua y Barbuda",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SAU",
+      description: "Arabia Saudita",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "DZA",
+      description: "Argelia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ARG",
+      description: "Argentina",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ARM",
+      description: "Armenia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ABW",
+      description: "Aruba",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "AUS",
+      description: "Australia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "AUT",
+      description: "Austria",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "AZE",
+      description: "Azerbaiyán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BHS",
+      description: "Bahamas (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BGD",
+      description: "Bangladés",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BRB",
+      description: "Barbados",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BHR",
+      description: "Baréin",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BEL",
+      description: "Bélgica",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "BLZ",
+      description: "Belice",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BEN",
+      description: "Benín",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BMU",
+      description: "Bermudas",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BLR",
+      description: "Bielorrusia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MMR",
+      description: "Myanmar",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BOL",
+      description: "Bolivia, Estado Plurinacional de",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BIH",
+      description: "Bosnia y Herzegovina",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BWA",
+      description: "Botsuana",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BRA",
+      description: "Brasil",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BRN",
+      description: "Brunéi Darussalam",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BGR",
+      description: "Bulgaria",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "BFA",
+      description: "Burkina Faso",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BDI",
+      description: "Burundi",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BTN",
+      description: "Bután",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CPV",
+      description: "Cabo Verde",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KHM",
+      description: "Camboya",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CMR",
+      description: "Camerún",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CAN",
+      description: "Canadá",
+      postal_code_pattern: "[A-Z][0-9][A-Z] [0-9][A-Z][0-9]",
+      tax_identity_registration_pattern: "[0-9]{9}",
+      tax_identity_registration_validation: null,
+      groups: "TLCAN"
+    },
+    {
+      country: "QAT",
+      description: "Catar",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BES",
+      description: "Bonaire, San Eustaquio y Saba",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TCD",
+      description: "Chad",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CHL",
+      description: "Chile",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CHN",
+      description: "China",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CYP",
+      description: "Chipre",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "COL",
+      description: "Colombia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "COM",
+      description: "Comoras",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PRK",
+      description: "Corea (la República Democrática Popular de)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KOR",
+      description: "Corea (la República de)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CIV",
+      description: "Côte d'Ivoire",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CRI",
+      description: "Costa Rica",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "HRV",
+      description: "Croacia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "CUB",
+      description: "Cuba",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CUW",
+      description: "Curaçao",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "DNK",
+      description: "Dinamarca",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "DMA",
+      description: "Dominica",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ECU",
+      description: "Ecuador",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "EGY",
+      description: "Egipto",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SLV",
+      description: "El Salvador",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ARE",
+      description: "Emiratos Árabes Unidos (Los)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ERI",
+      description: "Eritrea",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SVK",
+      description: "Eslovaquia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "SVN",
+      description: "Eslovenia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "ESP",
+      description: "España",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "USA",
+      description: "Estados Unidos (los)",
+      postal_code_pattern: "[0-9]{5}(-[0-9]{4})?",
+      tax_identity_registration_pattern: "[0-9]{9}",
+      tax_identity_registration_validation: null,
+      groups: "TLCAN"
+    },
+    {
+      country: "EST",
+      description: "Estonia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "ETH",
+      description: "Etiopía",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PHL",
+      description: "Filipinas (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "FIN",
+      description: "Finlandia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "FJI",
+      description: "Fiyi",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "FRA",
+      description: "Francia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "GAB",
+      description: "Gabón",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GMB",
+      description: "Gambia (La)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GEO",
+      description: "Georgia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GHA",
+      description: "Ghana",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GIB",
+      description: "Gibraltar",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GRD",
+      description: "Granada",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GRC",
+      description: "Grecia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "GRL",
+      description: "Groenlandia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GLP",
+      description: "Guadalupe",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GUM",
+      description: "Guam",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GTM",
+      description: "Guatemala",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GUF",
+      description: "Guayana Francesa",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GGY",
+      description: "Guernsey",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GIN",
+      description: "Guinea",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GNB",
+      description: "Guinea-Bisáu",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GNQ",
+      description: "Guinea Ecuatorial",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GUY",
+      description: "Guyana",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "HTI",
+      description: "Haití",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "HND",
+      description: "Honduras",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "HKG",
+      description: "Hong Kong",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "HUN",
+      description: "Hungría",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "IND",
+      description: "India",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "IDN",
+      description: "Indonesia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "IRQ",
+      description: "Irak",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "IRN",
+      description: "Irán (la República Islámica de)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "IRL",
+      description: "Irlanda",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "BVT",
+      description: "Isla Bouvet",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "IMN",
+      description: "Isla de Man",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CXR",
+      description: "Isla de Navidad",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NFK",
+      description: "Isla Norfolk",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ISL",
+      description: "Islandia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CYM",
+      description: "Islas Caimán (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CCK",
+      description: "Islas Cocos (Keeling)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "COK",
+      description: "Islas Cook (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "FRO",
+      description: "Islas Feroe (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SGS",
+      description: "Georgia del sur y las islas sandwich del sur",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "HMD",
+      description: "Isla Heard e Islas McDonald",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "FLK",
+      description: "Islas Malvinas [Falkland] (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MNP",
+      description: "Islas Marianas del Norte (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MHL",
+      description: "Islas Marshall (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PCN",
+      description: "Pitcairn",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SLB",
+      description: "Islas Salomón (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TCA",
+      description: "Islas Turcas y Caicos (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "UMI",
+      description: "Islas de Ultramar Menores de Estados Unidos (las)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VGB",
+      description: "Islas Vírgenes (Británicas)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VIR",
+      description: "Islas Vírgenes (EE.UU.)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ISR",
+      description: "Israel",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ITA",
+      description: "Italia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "JAM",
+      description: "Jamaica",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "JPN",
+      description: "Japón",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "JEY",
+      description: "Jersey",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "JOR",
+      description: "Jordania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KAZ",
+      description: "Kazajistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KEN",
+      description: "Kenia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KGZ",
+      description: "Kirguistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KIR",
+      description: "Kiribati",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KWT",
+      description: "Kuwait",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LAO",
+      description: "Lao, (la) República Democrática Popular",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LSO",
+      description: "Lesoto",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LVA",
+      description: "Letonia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "LBN",
+      description: "Líbano",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LBR",
+      description: "Liberia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LBY",
+      description: "Libia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LIE",
+      description: "Liechtenstein",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LTU",
+      description: "Lituania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "LUX",
+      description: "Luxemburgo",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "MAC",
+      description: "Macao",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MDG",
+      description: "Madagascar",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MYS",
+      description: "Malasia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MWI",
+      description: "Malaui",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MDV",
+      description: "Maldivas",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MLI",
+      description: "Malí",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MLT",
+      description: "Malta",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "MAR",
+      description: "Marruecos",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MTQ",
+      description: "Martinica",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MUS",
+      description: "Mauricio",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MRT",
+      description: "Mauritania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MYT",
+      description: "Mayotte",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MEX",
+      description: "México",
+      postal_code_pattern: "[0-9]{5}",
+      tax_identity_registration_pattern:
+        "[A-Z&Ñ]{3,4}[0-9]{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z0-9]{2}[0\r\n-9A]",
+      tax_identity_registration_validation: "Lista del SAT",
+      groups: "TLCAN"
+    },
+    {
+      country: "FSM",
+      description: "Micronesia (los Estados Federados de)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MDA",
+      description: "Moldavia (la República de)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MCO",
+      description: "Mónaco",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MNG",
+      description: "Mongolia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MNE",
+      description: "Montenegro",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MSR",
+      description: "Montserrat",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MOZ",
+      description: "Mozambique",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NAM",
+      description: "Namibia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NRU",
+      description: "Nauru",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NPL",
+      description: "Nepal",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NIC",
+      description: "Nicaragua",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NER",
+      description: "Níger (el)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NGA",
+      description: "Nigeria",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NIU",
+      description: "Niue",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NOR",
+      description: "Noruega",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NCL",
+      description: "Nueva Caledonia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NZL",
+      description: "Nueva Zelanda",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "OMN",
+      description: "Omán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "NLD",
+      description: "Países Bajos (los)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "PAK",
+      description: "Pakistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PLW",
+      description: "Palaos",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PSE",
+      description: "Palestina, Estado de",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PAN",
+      description: "Panamá",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PNG",
+      description: "Papúa Nueva Guinea",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PRY",
+      description: "Paraguay",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PER",
+      description: "Perú",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "PYF",
+      description: "Polinesia Francesa",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "POL",
+      description: "Polonia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "PRT",
+      description: "Portugal",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "PRI",
+      description: "Puerto Rico",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "GBR",
+      description: "Reino Unido (el)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "CAF",
+      description: "República Centroafricana (la)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "CZE",
+      description: "República Checa (la)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "MKD",
+      description: "Macedonia (la antigua República Yugoslava de)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "COG",
+      description: "Congo",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "COD",
+      description: "Congo (la República Democrática del)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "DOM",
+      description: "República Dominicana (la)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "REU",
+      description: "Reunión",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "RWA",
+      description: "Ruanda",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ROU",
+      description: "Rumania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "RUS",
+      description: "Rusia, (la) Federación de",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ESH",
+      description: "Sahara Occidental",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "WSM",
+      description: "Samoa",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ASM",
+      description: "Samoa Americana",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "BLM",
+      description: "San Bartolomé",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "KNA",
+      description: "San Cristóbal y Nieves",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SMR",
+      description: "San Marino",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "MAF",
+      description: "San Martín (parte francesa)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SPM",
+      description: "San Pedro y Miquelón",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VCT",
+      description: "San Vicente y las Granadinas",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SHN",
+      description: "Santa Helena, Ascensión y Tristán de Acuña",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LCA",
+      description: "Santa Lucía",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "STP",
+      description: "Santo Tomé y Príncipe",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SEN",
+      description: "Senegal",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SRB",
+      description: "Serbia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SYC",
+      description: "Seychelles",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SLE",
+      description: "Sierra leona",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SGP",
+      description: "Singapur",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SXM",
+      description: "Sint Maarten (parte holandesa)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SYR",
+      description: "Siria, (la) República Árabe",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SOM",
+      description: "Somalia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "LKA",
+      description: "Sri Lanka",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SWZ",
+      description: "Suazilandia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ZAF",
+      description: "Sudáfrica",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SDN",
+      description: "Sudán (el)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SSD",
+      description: "Sudán del Sur",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SWE",
+      description: "Suecia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: "Unión Europea"
+    },
+    {
+      country: "CHE",
+      description: "Suiza",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SUR",
+      description: "Surinam",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "SJM",
+      description: "Svalbard y Jan Mayen",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "THA",
+      description: "Tailandia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TWN",
+      description: "Taiwán (Provincia de China)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TZA",
+      description: "Tanzania, República Unida de",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TJK",
+      description: "Tayikistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "IOT",
+      description: "Territorio Británico del Océano Índico (el)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ATF",
+      description: "Territorios Australes Franceses (los)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TLS",
+      description: "Timor-Leste",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TGO",
+      description: "Togo",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TKL",
+      description: "Tokelau",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TON",
+      description: "Tonga",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TTO",
+      description: "Trinidad y Tobago",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TUN",
+      description: "Túnez",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TKM",
+      description: "Turkmenistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TUR",
+      description: "Turquía",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "TUV",
+      description: "Tuvalu",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "UKR",
+      description: "Ucrania",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "UGA",
+      description: "Uganda",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "URY",
+      description: "Uruguay",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "UZB",
+      description: "Uzbekistán",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VUT",
+      description: "Vanuatu",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VAT",
+      description: "Santa Sede[Estado de la Ciudad del Vaticano] (la)",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VEN",
+      description: "Venezuela, República Bolivariana de",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "VNM",
+      description: "Viet Nam",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "WLF",
+      description: "Wallis y Futuna",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "YEM",
+      description: "Yemen",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "DJI",
+      description: "Yibuti",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ZMB",
+      description: "Zambia",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ZWE",
+      description: "Zimbabue",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    },
+    {
+      country: "ZZZ",
+      description: "Países no declarados",
+      postal_code_pattern: null,
+      tax_identity_registration_pattern: null,
+      tax_identity_registration_validation: null,
+      groups: null
+    }
+  ])
+  

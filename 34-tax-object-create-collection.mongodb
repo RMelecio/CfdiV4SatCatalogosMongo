@@ -1,0 +1,29 @@
+use("4Invoices");
+
+db.createCollection("tax_object", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi tax object - c_ObjectoImp",
+      required: [
+        "tax_object",
+        "description",
+        "start_validity_date",
+      ],
+      properties: {
+        tax_object: {
+          bsonType: "string",
+        },
+        tax_object: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

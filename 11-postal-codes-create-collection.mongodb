@@ -1,0 +1,79 @@
+use("4Invoices");
+
+db.createCollection("postal_codes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi postalCodes - c_CodigoPostal",
+      required: [
+        "postal_code",
+        "state",
+        "border_zone_incentive",
+        "start_validity_date",
+        "time_zone_references"
+      ],
+      properties: {
+        postal_code: {
+          bsonType: "string",
+        },
+        state: {
+          bsonType: "string",
+          maxLength: 3,
+          minLength: 3
+        },
+        municipality: {
+          bsonType: "string",
+          maxLength: 3,
+          minLength: 3
+        },
+        locality: {
+          bsonType: "string",
+          maxLength: 2,
+          minLength: 3
+        },
+        border_zone_incentive: {
+          bsonType: "int",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+        time_zone_references: {
+          bsonType: "object",
+          required: ["time_zone_description", "summertimer_difference", "wintertime_difference"],
+          properties: {
+            time_zone_description: {
+              bsonType: "string",
+            },
+            start_month_summertime: {
+              bsonType: "string",
+            },
+            start_day_summertime: {
+              bsonType: "string",
+            },
+            start_hour_day_summertime: {
+              bsonType: "string",
+            },
+            summertimer_difference: {
+              bsonType: "int",
+            },
+            start_month_wintertime: {
+              bsonType: "string",
+            },
+            start_day_wintertime: {
+              bsonType: "string",
+            },
+            start_hour_day_wintertime: {
+              bsonType: "string",
+            },
+            wintertime_difference: {
+              bsonType: "int",
+            },
+          }
+        }
+      }
+    }
+  }
+});

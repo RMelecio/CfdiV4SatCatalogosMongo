@@ -1,0 +1,34 @@
+use("4Invoices");
+
+db.createCollection("countries", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi countries - c_Pais",
+      required: [
+        "country",
+        "description",
+      ],
+      properties: {
+        country: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        postal_code_pattern: {
+            bsonType: "string",
+        },
+        tax_identity_registration_pattern: {
+        bsonType: "string",
+        },
+        tax_identity_registration_validation: {
+          bsonType: "string",
+        },
+        groups: {
+          bsonType: "string",
+        }
+      }
+    }
+  }
+});

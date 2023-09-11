@@ -1,0 +1,25 @@
+use("4Invoices");
+
+db.createCollection("custom_patents", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi custom patents - c_PatenteAduanal",
+      required: [
+        "custom_patent",
+        "start_validity_date"
+      ],
+      properties: {
+        custom_patent: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

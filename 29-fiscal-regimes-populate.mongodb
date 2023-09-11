@@ -1,0 +1,160 @@
+use("4Invoices");
+db.fiscal_regimes.drop();
+db.getCollection("fiscal_regimes").insertMany([
+    {
+      fiscal_regime: "601",
+      description: "General de Ley Personas Morales",
+      physical: "No",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "603",
+      description: "Personas Morales con Fines no Lucrativos",
+      physical: "No",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "605",
+      description: "Sueldos y Salarios e Ingresos Asimilados a Salarios",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "606",
+      description: "Arrendamiento",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "607",
+      description: "Régimen de Enajenación o Adquisición de Bienes",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "608",
+      description: "Demás ingresos",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "610",
+      description:
+        "Residentes en el Extranjero sin Establecimiento Permanente en México",
+      physical: "Sí",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "611",
+      description: "Ingresos por Dividendos (socios y accionistas)",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "612",
+      description:
+        "Personas Físicas con Actividades Empresariales y Profesionales",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "614",
+      description: "Ingresos por intereses",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "615",
+      description: "Régimen de los ingresos por obtención de premios",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "616",
+      description: "Sin obligaciones fiscales",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "620",
+      description:
+        "Sociedades Cooperativas de Producción que optan por diferir sus ingresos",
+      physical: "No",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "621",
+      description: "Incorporación Fiscal",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "622",
+      description: "Actividades Agrícolas, Ganaderas, Silvícolas y Pesqueras",
+      physical: "No",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "623",
+      description: "Opcional para Grupos de Sociedades",
+      physical: "No",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "624",
+      description: "Coordinados",
+      physical: "No",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "625",
+      description:
+        "Régimen de las Actividades Empresariales con ingresos a través de Plataformas Tecnológicas",
+      physical: "Sí",
+      moral: "No",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      fiscal_regime: "626",
+      description: "Régimen Simplificado de Confianza",
+      physical: "Sí",
+      moral: "Sí",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    }
+  ])

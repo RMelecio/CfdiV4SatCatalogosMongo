@@ -1,0 +1,19 @@
+use("4Invoices");
+db.factor_types.drop();
+db.getCollection("factor_types").insertMany([
+    {
+      factor_type: "Tasa",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      factor_type: "Cuota",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      factor_type: "Excento",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+  ]);

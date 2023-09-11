@@ -1,0 +1,46 @@
+use("4Invoices");
+db.relation_types.drop();
+db.getCollection("relation_types").insertMany([
+    {
+      relation_type: "01",
+      description: "Nota de crédito de los documentos relacionados",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      relation_type: "02",
+      description: "Nota de débito de los documentos relacionados",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      relation_type: "03",
+      description: "Devolución de mercancía sobre facturas o traslados previos",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      relation_type: "04",
+      description: "Sustitución de los CFDI previos",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      relation_type: "05",
+      description: "Traslados de mercancías facturados previamente",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      relation_type: "06",
+      description: "Factura generada por los traslados previos",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      relation_type: "07",
+      description: "CFDI por aplicación de anticipo",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+]);

@@ -1,0 +1,29 @@
+use("4Invoices");
+
+db.createCollection("payment_methods", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi payment methods - c_MetodoPago",
+      required: [
+        "payment_method",
+        "description",
+        "start_validity_date",
+      ],
+      properties: {
+        paymentMethod: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

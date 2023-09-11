@@ -1,0 +1,669 @@
+use("4Invoices");
+db.states.drop();
+db.getCollection("states").insertMany([
+  {
+    estate: "AGU",
+    country: "MEX",
+    state_name: "Aguascalientes",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "BCN",
+    country: "MEX",
+    state_name: "Baja California",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "BCS",
+    country: "MEX",
+    state_name: "Baja California Sur",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CAM",
+    country: "MEX",
+    state_name: "Campeche",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CHP",
+    country: "MEX",
+    state_name: "Chiapas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CHH",
+    country: "MEX",
+    state_name: "Chihuahua",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "COA",
+    country: "MEX",
+    state_name: "Coahuila",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "COL",
+    country: "MEX",
+    state_name: "Colima",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CMX",
+    country: "MEX",
+    state_name: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "DUR",
+    country: "MEX",
+    state_name: "Durango",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "GUA",
+    country: "MEX",
+    state_name: "Guanajuato",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "GRO",
+    country: "MEX",
+    state_name: "Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "HID",
+    country: "MEX",
+    state_name: "Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "JAL",
+    country: "MEX",
+    state_name: "Jalisco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MEX",
+    country: "MEX",
+    state_name: "Estado de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MIC",
+    country: "MEX",
+    state_name: "Michoacán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MOR",
+    country: "MEX",
+    state_name: "Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NAY",
+    country: "MEX",
+    state_name: "Nayarit",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NLE",
+    country: "MEX",
+    state_name: "Nuevo León",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "OAX",
+    country: "MEX",
+    state_name: "Oaxaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "PUE",
+    country: "MEX",
+    state_name: "Puebla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "QUE",
+    country: "MEX",
+    state_name: "Querétaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "ROO",
+    country: "MEX",
+    state_name: "Quintana Roo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "SLP",
+    country: "MEX",
+    state_name: "San Luis Potosí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "SIN",
+    country: "MEX",
+    state_name: "Sinaloa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "SON",
+    country: "MEX",
+    state_name: "Sonora",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "TAB",
+    country: "MEX",
+    state_name: "Tabasco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "TAM",
+    country: "MEX",
+    state_name: "Tamaulipas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "TLA",
+    country: "MEX",
+    state_name: "Tlaxcala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "VER",
+    country: "MEX",
+    state_name: "Veracruz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "YUC",
+    country: "MEX",
+    state_name: "Yucatán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "ZAC",
+    country: "MEX",
+    state_name: "Zacatecas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "AL",
+    country: "USA",
+    state_name: "Alabama",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "AK",
+    country: "USA",
+    state_name: "Alaska",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "AZ",
+    country: "USA",
+    state_name: "Arizona",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "AR",
+    country: "USA",
+    state_name: "Arkansas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CA",
+    country: "USA",
+    state_name: "California",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NC",
+    country: "USA",
+    state_name: "Carolina del Norte",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "SC",
+    country: "USA",
+    state_name: "Carolina del Sur",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CO",
+    country: "USA",
+    state_name: "Colorado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "CT",
+    country: "USA",
+    state_name: "Connecticut",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "ND",
+    country: "USA",
+    state_name: "Dakota del Norte",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "SD",
+    country: "USA",
+    state_name: "Dakota del Sur",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "DE",
+    country: "USA",
+    state_name: "Delaware",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "FL",
+    country: "USA",
+    state_name: "Florida",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "GA",
+    country: "USA",
+    state_name: "Georgia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "HI",
+    country: "USA",
+    state_name: "Hawái",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "ID",
+    country: "USA",
+    state_name: "Idaho",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "IL",
+    country: "USA",
+    state_name: "Illinois",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "IN",
+    country: "USA",
+    state_name: "Indiana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "IA",
+    country: "USA",
+    state_name: "Iowa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "KS",
+    country: "USA",
+    state_name: "Kansas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "KY",
+    country: "USA",
+    state_name: "Kentucky",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "LA",
+    country: "USA",
+    state_name: "Luisiana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "ME",
+    country: "USA",
+    state_name: "Maine",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MD",
+    country: "USA",
+    state_name: "Maryland",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MA",
+    country: "USA",
+    state_name: "Massachusetts",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MI",
+    country: "USA",
+    state_name: "Míchigan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MN",
+    country: "USA",
+    state_name: "Minnesota",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MS",
+    country: "USA",
+    state_name: "Misisipi",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MO",
+    country: "USA",
+    state_name: "Misuri",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MT",
+    country: "USA",
+    state_name: "Montana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NE",
+    country: "USA",
+    state_name: "Nebraska",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NV",
+    country: "USA",
+    state_name: "Nevada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NJ",
+    country: "USA",
+    state_name: "Nueva Jersey",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NY",
+    country: "USA",
+    state_name: "Nueva York",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NH",
+    country: "USA",
+    state_name: "Nuevo Hampshire",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NM",
+    country: "USA",
+    state_name: "Nuevo México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "OH",
+    country: "USA",
+    state_name: "Ohio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "OK",
+    country: "USA",
+    state_name: "Oklahoma",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "OR",
+    country: "USA",
+    state_name: "Oregón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "PA",
+    country: "USA",
+    state_name: "Pensilvania",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "RI",
+    country: "USA",
+    state_name: "Rhode Island",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "TN",
+    country: "USA",
+    state_name: "Tennessee",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "TX",
+    country: "USA",
+    state_name: "Texas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "UT",
+    country: "USA",
+    state_name: "Utah",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "VT",
+    country: "USA",
+    state_name: "Vermont",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "VA",
+    country: "USA",
+    state_name: "Virginia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "WV",
+    country: "USA",
+    state_name: "Virginia Occidental",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "WA",
+    country: "USA",
+    state_name: "Washington",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "WI",
+    country: "USA",
+    state_name: "Wisconsin",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "WY",
+    country: "USA",
+    state_name: "Wyoming",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "ON",
+    country: "CAN",
+    state_name: "Ontario",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "QC",
+    country: "CAN",
+    state_name: "Quebec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NS",
+    country: "CAN",
+    state_name: "Nueva Escocia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NB",
+    country: "CAN",
+    state_name: "Nuevo Brunswick",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "MB",
+    country: "CAN",
+    state_name: "Manitoba",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "BC",
+    country: "CAN",
+    state_name: "Columbia Británica",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "PE",
+    country: "CAN",
+    state_name: "Isla del Príncipe Eduardo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "SK",
+    country: "CAN",
+    state_name: "Saskatchewan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "AB",
+    country: "CAN",
+    state_name: "Alberta",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NL",
+    country: "CAN",
+    state_name: "Terranova y Labrador",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "NT",
+    country: "CAN",
+    state_name: "Territorios del Noroeste",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "YT",
+    country: "CAN",
+    state_name: "Yukón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    estate: "UN",
+    country: "CAN",
+    state_name: "Nunavut",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  }
+])

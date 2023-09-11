@@ -1,0 +1,66 @@
+use("4Invoices");
+
+db.createCollection("payment_ways", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi payments ways - c_FormaPago",
+      required: [
+        "payment_way",
+        "description",
+        "banked",
+        "operation_number",
+        "issuer_ordening_account_rfc",
+        "payer_account",
+        "payer_account_pattern",
+        "issuer_beneficiary_account_rfc",
+        "beneficiary_account",
+        "beneficiary_account_pattern",
+        "type_payment_string",
+        "bank_name_issuer_account_foreing",
+        "start_validity_date"
+      ],
+      properties: {
+        payment_way: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        banked: {
+          bsonType: "string",
+        },
+        operation_number: {
+          bsonType: "string",
+        },
+        issuer_ordening_account_rfc: {
+          bsonType: "string",
+        },
+        payer_account: {
+          bsonType: "string",
+        },
+        payer_account_pattern: {
+          bsonType: "string",
+        },
+        issuer_beneficiary_account_rfc: {
+          bsonType: "string",
+        },
+        beneficiary_account_pattern: {
+          bsonType: "string",
+        },
+        type_payment_string: {
+          bsonType: "string",
+        },
+        bank_name_issuer_account_foreing: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "string",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

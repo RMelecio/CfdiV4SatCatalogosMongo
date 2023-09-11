@@ -1,0 +1,175 @@
+use("4Invoices");
+db.rate_fees.drop();
+db.getCollection("rate_fees").insertMany([
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.000000 " },
+    tax: "IVA",
+    factor: "Tasa",
+    retention: "No",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.160000 " },
+    tax: "IVA",
+    factor: "Tasa",
+    retention: "No",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Rango",
+    rate_fee: { min_value: "0.000000 ", max_value: "0.160000 " },
+    tax: "IVA",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.080000 " },
+    tax: "IVA Crédito aplicado del 50%",
+    factor: "Tasa",
+    retention: "No",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.265000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.300000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.530000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.500000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "1.600000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.304000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.250000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.090000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.080000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.070000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.060000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.030000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "No",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Fijo",
+    rate_fee: { min_value: null, max_value: "0.000000 " },
+    tax: "IEPS",
+    factor: "Tasa",
+    retention: "No",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Rango",
+    rate_fee: { min_value: "0.000000 ", max_value: "59.144900 " },
+    tax: "IEPS",
+    factor: "Cuota",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    range_or_fixed: "Rango",
+    rate_fee: { min_value: "0.000000 ", max_value: "0.350000 " },
+    tax: "ISR",
+    factor: "Tasa",
+    retention: "Sí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  }
+])

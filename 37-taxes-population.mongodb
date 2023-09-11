@@ -1,0 +1,31 @@
+use("4Invoices");
+db.taxes.drop();
+db.getCollection("taxes").insertMany([
+    {
+      tax: "001",
+      description: "ISR",
+      retention: "Si",
+      transfer: "No",
+      local_or_federal: "Federal",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      tax: "002",
+      description: "IVA",
+      retention: "Si",
+      transfer: "Si",
+      local_or_federal: "Federal",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      tax: "003",
+      description: "IEPS",
+      retention: "Si",
+      transfer: "Si",
+      local_or_federal: "Federal",
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+  ]);

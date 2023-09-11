@@ -1,0 +1,39 @@
+use("4Invoices");
+db.invoice_types.drop();
+db.getCollection("invoice_types").insertMany([
+    {
+      invoice_type: "I",
+      description: "Ingreso",
+      max_value: ["999999999999999999.999999"],
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      invoice_type: "E",
+      description: "Egreso",
+      max_vale: ["999999999999999999.999999"],
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      invoice_type: "T",
+      description: "Traslado",
+      max_value: ["0"],
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      invoice_type: "N",
+      description: "Nómina",
+      max_value: ["NS","NdS", "999999999999999999.999999"],
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    },
+    {
+      invoice_type: "P",
+      description: "Pago",
+      max_value: ["999999999999999999.999999"],
+      start_validity_date: "2022-01-01",
+      end_validity_date: null
+    }
+  ])

@@ -1,0 +1,40 @@
+use("4Invoices");
+
+db.createCollection("currencies", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi currencies - c_Moneda",
+      required: [
+        "currency",
+        "description",
+        "decimals",
+        "variation_percentage",
+        "start_validity_date",
+        "end_validity_date",
+      ],
+      properties: {
+        currency: {
+          bsonType: "string",
+          maxLength: 3,
+          minLength: 3
+        },
+        description: {
+          bsonType: "string",
+        },
+        decimals: {
+          bsonType: "int",
+        },
+        variation_percentage: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "string",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

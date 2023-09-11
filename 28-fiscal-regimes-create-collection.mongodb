@@ -1,0 +1,37 @@
+use("4Invoices");
+
+db.createCollection("fiscal_regimes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi fiscal regimes - c_RegimenFiscal",
+      required: [
+        "fiscal_regime",
+        "description",
+        "physical",
+        "moral",
+        "start_validity_date",
+      ],
+      properties: {
+        relation_type: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        physical: {
+            bsonType: "string",
+        },
+        moral: {
+        bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

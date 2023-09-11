@@ -1,0 +1,4653 @@
+use("4Invoices");
+db.localities.drop();
+
+db.getCollection("localities").insertMany([
+  {
+    locality: "01",
+    estate: "AGU",
+    description: "Aguascalientes",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "BCN",
+    description: "Ensenada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "BCS",
+    description: "Ciudad Constitución",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "CAM",
+    description: "San Francisco de Campeche",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "COA",
+    description: "Ciudad Acuña",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "COL",
+    description: "Colima",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "CHH",
+    description: "Santa Rosalía de Camargo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "CHP",
+    description: "Comitán de Domínguez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "DUR",
+    description: "Victoria de Durango",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "GRO",
+    description: "Acapulco de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "GUA",
+    description: "Acámbaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "HID",
+    description: "Actopan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "JAL",
+    description: "Ameca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "MEX",
+    description: "Ciudad Adolfo López Mateos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "MIC",
+    description: "Apatzingán de la Constitución",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "MOR",
+    description: "Cuautla (Cuautla de Morelos)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "NAY",
+    description: "Santiago Ixcuintla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "NLE",
+    description: "Ciudad Apodaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "OAX",
+    description: "Juchitán (Juchitán de Zaragoza)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "PUE",
+    description: "Atlixco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "QUE",
+    description: "Querétaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "ROO",
+    description: "Cancún",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "SIN",
+    description: "Los Mochis",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "SLP",
+    description: "Ciudad Valles",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "SON",
+    description: "San Luis Río Colorado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "TAB",
+    description: "Cárdenas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "TAM",
+    description: "Altamira",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "TLA",
+    description: "Apizaco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "VER",
+    description: "Acayucan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "YUC",
+    description: "Mérida",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "01",
+    estate: "ZAC",
+    description: "Fresnillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "AGU",
+    description: "Calvillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "BCN",
+    description: "Mexicali",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "BCS",
+    description: "La Paz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "CAM",
+    description: "Ciudad del Carmen",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "COA",
+    description: "Frontera",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "COL",
+    description: "Manzanillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "CHH",
+    description: "Chihuahua",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "CHP",
+    description: "San Cristóbal de las Casas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "DUR",
+    description: "Gómez Palacio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "GRO",
+    description: "Chilpancingo de los Bravo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "GUA",
+    description: "San miguel de Allende",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "HID",
+    description: "Apan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "JAL",
+    description: "Ciudad Guzmán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "MEX",
+    description: "Chimalhuacán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "MIC",
+    description: "Los Reyes de Salgado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "MOR",
+    description: "Cuernavaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "NAY",
+    description: "Tepic",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "NLE",
+    description: "San Pedro Garza García",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "OAX",
+    description: "Oaxaca de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "PUE",
+    description: "Izúcar de Matamoros",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "QUE",
+    description: "San Juan del Rio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "ROO",
+    description: "Cozumel",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "SIN",
+    description: "Culiacán Rosales",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "SLP",
+    description: "Ébano",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "SON",
+    description: "Agua Prieta",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "TAB",
+    description: "Villahermosa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "TAM",
+    description: "Ciudad Camargo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "TLA",
+    description: "Villa Vicente Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "VER",
+    description: "Naranjos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "YUC",
+    description: "Tizimín",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "02",
+    estate: "ZAC",
+    description: "Jerez de García Salinas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "AGU",
+    description: "San Francisco de los Romo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "BCN",
+    description: "Tecate",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "BCS",
+    description: "Cabo San Lucas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "CAM",
+    description: "Calkiní",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "COA",
+    description: "Matamoros",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "COL",
+    description: "Tecoman",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "CHH",
+    description: "Cuauhtémoc",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "CHP",
+    description: "Tapachula de Córdova y Ordóñez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "DUR",
+    description: "Ciudad Lerdo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "GRO",
+    description: "Iguala de la Independencia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "GUA",
+    description: "Celaya",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "HID",
+    description: "Pachuca de Soto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "JAL",
+    description: "Guadalajara",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "MEX",
+    description: "Coacalco de Berriozabal",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "MIC",
+    description: "Ciudad Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "MOR",
+    description: "Galeana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "NAY",
+    description: "Tuxpan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "NLE",
+    description: "Ciudad General Escobedo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "OAX",
+    description: "Salina Cruz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "PUE",
+    description: "Puebla (Heroica Puebla)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "ROO",
+    description: "Felipe Carrillo Puerto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "SIN",
+    description: "Escuinapa de Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "SLP",
+    description: "Matehuala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "SON",
+    description: "Heroica Caborca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "TAB",
+    description: "Comalcalco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "TAM",
+    description: "Ciudad Madero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "TLA",
+    description: "Tlaxcala (Tlaxcala de Xicotencatl)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "VER",
+    description: "Boca del RÍo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "YUC",
+    description: "Ticul",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "03",
+    estate: "ZAC",
+    description: "Zacatecas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "AGU",
+    description: "Jesús María",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "BCN",
+    description: "Tijuana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "BCS",
+    description: "San José del Cabo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "CAM",
+    description: "Candelaria",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "COA",
+    description: "Monclova",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "COL",
+    description: "Ciudad de Villa de Álvarez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "CHH",
+    description: "Delicias",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "CHP",
+    description: "Tuxtla Gutiérrez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "DUR",
+    description: "Santiago Papasquiaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "GRO",
+    description: "Taxco de Alarcón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "GUA",
+    description: "Cortazar",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "HID",
+    description: "Cd. de Fray Bernardino de Sahagún",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "JAL",
+    description: "Lagos de Moreno",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "MEX",
+    description: "Cuautitlán Izcalli",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "MIC",
+    description: "Jacona de Plancarte",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "MOR",
+    description: "Jojutla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "NAY",
+    description: "Acaponeta",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "NLE",
+    description: "Guadalupe",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "OAX",
+    description: "San Juan Bautista Tuxtepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "PUE",
+    description: "San Martín Texmelucan de Labastida",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "QUE",
+    description: "El Pueblito",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "ROO",
+    description: "Chetumal",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "SIN",
+    description: "Guasave",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "SLP",
+    description: "Rioverde",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "SON",
+    description: "Ciudad Obregón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "TAB",
+    description: "Emiliano Zapata",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "TAM",
+    description: "Ciudad Mante",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "TLA",
+    description: "Huamantla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "VER",
+    description: "Coatepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "YUC",
+    description: "Motul de Carrillo Puerto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "04",
+    estate: "ZAC",
+    description: "Guadalupe",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "AGU",
+    description: "Pabellón de Arteaga",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "BCN",
+    description: "Playas de Rosarito",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "BCS",
+    description: "Loreto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "CAM",
+    description: "Escárcega",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "COA",
+    description: "Parras de la Fuente",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "COL",
+    description: "Ciudad de Armería",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "CHH",
+    description: "Hidalgo del Parral",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "CHP",
+    description: "Venustiano Carranza",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "DUR",
+    description: "Canatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "GRO",
+    description: "Arcelia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "GUA",
+    description: "Guanajuato",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "HID",
+    description: "Tula de Allende",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "JAL",
+    description: "Ocotlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "MEX",
+    description: "Ecatepec de Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "MIC",
+    description: "La piedad de Cabadas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "MOR",
+    description: "Puente de Ixtla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "NAY",
+    description: "Tecuala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "NLE",
+    description: "Linares",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "OAX",
+    description: "Matías Romero Avendaño",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "PUE",
+    description: "Tehuacan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "ROO",
+    description: "Playa del Carmen",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "SIN",
+    description: "Mazatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "SLP",
+    description: "San Luis Potosí",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "SON",
+    description: "Empalme",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "TAB",
+    description: "Jalpa de Méndez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "TAM",
+    description: "Heroica Matamoros",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "TLA",
+    description: "Calpulalpan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "VER",
+    description: "Agua dulce",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "YUC",
+    description: "Valladolid",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "05",
+    estate: "ZAC",
+    description: "Río Grande",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "AGU",
+    description: "Rincón de Romos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "BCN",
+    description: "Rodolfo Sánchez T. (Maneadero)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "BCS",
+    description: "Puerto Adolfo López Mateos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "CAM",
+    description: "Sabancuy",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "COA",
+    description: "Piedras Negras",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "CHH",
+    description: "Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "CHP",
+    description: "Jiquipilas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "DUR",
+    description: "San Juan del Río del Centauro del Norte",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "GRO",
+    description: "Ayutla de los Libres",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "GUA",
+    description: "Irapuato",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "HID",
+    description: "Tulancingo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "JAL",
+    description: "Puerto Vallarta",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "MEX",
+    description: "Huixquilucan de Degollado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "MIC",
+    description: "Morelia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "MOR",
+    description: "Santa Rosa Treinta",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "NAY",
+    description: "Compostela",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "NLE",
+    description: "Montemorelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "OAX",
+    description: "Heroica Ciudad de Huajuapan de León",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "PUE",
+    description: "Teziutlan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "ROO",
+    description: "Kantunilkin",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "SIN",
+    description: "Guamúchil",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "SLP",
+    description: "Soledad de Graciano Sánchez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "SON",
+    description: "Heroica Guaymas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "TAM",
+    description: "Nuevo Laredo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "TLA",
+    description: "Chiautempan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "VER",
+    description: "Coatzacoalcos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "YUC",
+    description: "Kanasín",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "06",
+    estate: "ZAC",
+    description: "Ciudad Cuauhtémoc",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "AGU",
+    description: "Asientos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "BCN",
+    description: "San Felipe",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "BCS",
+    description: "Todos Santos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "CAM",
+    description: "Hopelchén",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "COA",
+    description: "Sabinas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "CHH",
+    description: "Nuevo Casas Grandes",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "CHP",
+    description: "Villaflores",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "DUR",
+    description: "Peñón Blanco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "GRO",
+    description: "Atoyac de Álvarez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "GUA",
+    description: "León de los Aldama",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "HID",
+    description: "Zimapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "JAL",
+    description: "San Juan de los Lagos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "MEX",
+    description: "Los Reyes Acaquilpan (La Paz)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "MIC",
+    description: "Pátzcuaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "MOR",
+    description: "Zacatepec de Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "NAY",
+    description: "Francisco I. Madero (Puga)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "NLE",
+    description: "Monterrey",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "OAX",
+    description: "Loma Bonita",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "PUE",
+    description: "San Andrés Cholula",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "ROO",
+    description: "Isla Mujeres",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "SIN",
+    description: "Navolato",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "SLP",
+    description: "Charcas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "SON",
+    description: "Hermosillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "TAB",
+    description: "Macuspana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "TAM",
+    description: "Reynosa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "VER",
+    description: "Córdoba",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "07",
+    estate: "ZAC",
+    description: "Ojocaliente",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "AGU",
+    description: "Tepezalá",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "BCS",
+    description: "Heroica Mulegé",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "CAM",
+    description: "Champotón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "COA",
+    description: "Saltillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "CHP",
+    description: "Las Margaritas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "DUR",
+    description: "Francisco I. Madero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "GUA",
+    description: "Moroleón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "HID",
+    description: "Huejutla de Reyes",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "JAL",
+    description: "Tepatitlán de Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "MEX",
+    description: "Metepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "MIC",
+    description: "Sahuayo de Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "MOR",
+    description: "Tlaquiltenango",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "NAY",
+    description: "Villa Hidalgo (El Nuevo)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "NLE",
+    description: "Ciudad Sabinas Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "OAX",
+    description: "Puerto Escondido",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "PUE",
+    description: "San Pedro Cholula",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "ROO",
+    description: "Bacalar",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "SIN",
+    description: "Quila",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "SLP",
+    description: "Salinas de Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "SON",
+    description: "Huatabampo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "TAB",
+    description: "Tenosique de Pino Suárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "TAM",
+    description: "Ciudad Río Bravo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "VER",
+    description: "Tres Valles",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "08",
+    estate: "ZAC",
+    description: "Villa Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "AGU",
+    description: "Cosío",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "BCS",
+    description: "Villa Alberto Andrés Alvarado Arámburo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "CAM",
+    description: "Hecelchakán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "COA",
+    description: "Nueva Rosita",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "CHH",
+    description: "Madera",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "CHP",
+    description: "Arriaga",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "DUR",
+    description: "Nombre de Dios",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "GRO",
+    description: "San Jerónimo de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "GUA",
+    description: "Salamanca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "HID",
+    description: "Tlaxcoapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "JAL",
+    description: "Tlaquepaque",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "MEX",
+    description: "Naucalpan de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "MIC",
+    description: "Uruapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "NAY",
+    description: "Ruiz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "NLE",
+    description: "San Nicolás de los Garza",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "OAX",
+    description: "Río Grande o Piedra Parada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "PUE",
+    description: "Huauchinango",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "SIN",
+    description: "Ahome",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "SLP",
+    description: "Cárdenas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "SON",
+    description: "Navojoa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "TAB",
+    description: "Teapa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "TAM",
+    description: "San Fernando",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "VER",
+    description: "Jáltipan de Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "09",
+    estate: "ZAC",
+    description: "Villanueva",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "BCS",
+    description: "San Ignacio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "COA",
+    description: "San Pedro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "CHH",
+    description: "Colonia Anáhuac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "CHP",
+    description: "Palenque",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "DUR",
+    description: "Vicente Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "GRO",
+    description: "Ciudad Apaxtla de Castrejón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "GUA",
+    description: "San Francisco del Rincón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "HID",
+    description: "Tizayuca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "JAL",
+    description: "Zapopan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "MEX",
+    description: "Ciudad Nezahualcoyotl",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "MIC",
+    description: "Zacapu",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "NAY",
+    description: "San Blas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "NLE",
+    description: "Ciudad Santa Catarina",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "PUE",
+    description: "Acatlán de Osorio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "SIN",
+    description: "Higuera de Zaragoza",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "SLP",
+    description: "Cerritos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "SON",
+    description: "Heroica Nogales",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "TAB",
+    description: "Paraíso",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "TAM",
+    description: "Tampico",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "VER",
+    description: "Xalapa-Enríquez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "10",
+    estate: "ZAC",
+    description: "Villa de Cos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "BCS",
+    description: "Guerrero Negro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "CAM",
+    description: "Pomuch",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "COA",
+    description: "Torreón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "CHH",
+    description: "Juan Aldama",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "CHP",
+    description: "Ocosingo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "DUR",
+    description: "El Salto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "GRO",
+    description: "Ciudad Altamirano",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "GUA",
+    description: "Silao",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "HID",
+    description: "Santiago Tulantepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "JAL",
+    description: "Tlajomulco de Zúñiga",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "MEX",
+    description: "Villa Nicolás Romero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "MIC",
+    description: "Zamora de Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "NAY",
+    description: "Ixtlán del Río",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "NLE",
+    description: "Doctor Arroyo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "OAX",
+    description: "Santiago Suchilquitongo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "PUE",
+    description: "Cuautlancingo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "SIN",
+    description: "Choix",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "SLP",
+    description: "Tamuín",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "SON",
+    description: "Puerto Peñasco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "TAB",
+    description: "Frontera",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "TAM",
+    description: "Ciudad Victoria",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "VER",
+    description: "Minatitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "11",
+    estate: "ZAC",
+    description: "Nochistlán de Mejía",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "BCS",
+    description: "Santa Rosalía",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "COA",
+    description: "Castaños",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "CHH",
+    description: "José Mariano Jiménez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "CHP",
+    description: "Tonalá",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "DUR",
+    description: "Santa María del Oro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "GRO",
+    description: "Buenavista de Cuellar",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "GUA",
+    description: "Jerécuaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "HID",
+    description: "Ixmiquilpan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "JAL",
+    description: "Tonalá",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "MEX",
+    description: "Tecamac de Felipe Villanueva",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "MIC",
+    description: "Heroica Zitácuaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "NAY",
+    description: "Bucerías",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "NLE",
+    description: "Ciénega de Flores",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "OAX",
+    description: "San Felipe Jalapa de Díaz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "PUE",
+    description: "Tepeaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "SIN",
+    description: "Villa Unión",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "SLP",
+    description: "Tamasopo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "SON",
+    description: "Heroica Ciudad de Cananea",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "TAB",
+    description: "Cunduacán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "TAM",
+    description: "González",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "VER",
+    description: "Orizaba",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "12",
+    estate: "ZAC",
+    description: "Víctor Rosales",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "COA",
+    description: "Francisco I. Madero (Chávez)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "CHH",
+    description: "Manuel Ojinaga",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "CHP",
+    description: "Mapastepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "GRO",
+    description: "Cutzamala de Pinzón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "GUA",
+    description: "Santiago Maravatío",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "HID",
+    description: "Tepeji del Rio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "JAL",
+    description: "Tuxpan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "MEX",
+    description: "Tepotzotlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "MIC",
+    description: "Paracho de Verduzco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "NAY",
+    description: "Las Varas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "NLE",
+    description: "Hualahuises",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "OAX",
+    description: "Bahias de Huatulco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "PUE",
+    description: "Tecamachalco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "SIN",
+    description: "Sinaloa de Leyva",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "SLP",
+    description: "Ciudad del Maíz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "SON",
+    description: "Sonoita",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "TAB",
+    description: "Huimanguillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "TAM",
+    description: "Jaumave",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "VER",
+    description: "Papantla de Olarte",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "13",
+    estate: "ZAC",
+    description: "Valparaíso",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "COA",
+    description: "Cuatro Ciénegas de Carranza",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "CHH",
+    description: "Bachíniva",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "CHP",
+    description: "Las Rosas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "GRO",
+    description: "Coyuca de Catalán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "GUA",
+    description: "Romita",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "HID",
+    description: "Cruz Azul",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "JAL",
+    description: "Tototlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "MEX",
+    description: "Tlalnepantla de Baz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "MIC",
+    description: "Tangancícuaro de Arista",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "NAY",
+    description: "Xalisco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "OAX",
+    description: "Putla Villa de Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "PUE",
+    description: "Zacatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "SIN",
+    description: "Mocorito",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "SLP",
+    description: "Cedral",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "SON",
+    description: "Magdalena de Kino",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "TAM",
+    description: "Ciudad Gustavo Díaz Ordaz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "VER",
+    description: "Poza Rica de Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "14",
+    estate: "ZAC",
+    description: "Luis Moya",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "COA",
+    description: "Nadadores",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "CHH",
+    description: "Saucillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "CHP",
+    description: "Chiapa de Corzo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "GRO",
+    description: "Tierra Colorada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "GUA",
+    description: "Tarandacuao",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "HID",
+    description: "Tepeapulco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "JAL",
+    description: "San Diego de Alejandría",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "MEX",
+    description: "Santa Maria Tultepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "MIC",
+    description: "Maravatío de Ocampo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "NAY",
+    description: "San pedro Lagunillas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "NLE",
+    description: "Cadereyta Jiménez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "OAX",
+    description: "Cosolapa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "PUE",
+    description: "Xicotepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "SIN",
+    description: "Angostura",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "SLP",
+    description: "Tierra Nueva",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "TAM",
+    description: "Estación Manuel (Úrsulo Galván)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "VER",
+    description: "San Andrés Tuxtla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "15",
+    estate: "ZAC",
+    description: "Moyahua de Estrada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "COA",
+    description: "Ramos Arizpe",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "CHP",
+    description: "Cacahoatán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "CMX",
+    description: "Ciudad de México",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "GRO",
+    description: "Coyuca de Benítez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "GUA",
+    description: "Huanímaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "JAL",
+    description: "La Resolana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "MEX",
+    description: "Tultitlán de Mariano Escobedo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "MIC",
+    description: "Zinapécuaro de Figueroa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "NAY",
+    description: "La peñita de Jaltemba",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "OAX",
+    description: "Tlacolula de Matamoros",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "PUE",
+    description: "Ciudad Serdán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "SIN",
+    description: "San Blas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "SLP",
+    description: "Villa de Reyes",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "TAM",
+    description: "Xicoténcatl",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "VER",
+    description: "Túxpam de Rodríguez Cano",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "16",
+    estate: "ZAC",
+    description: "Sombrerete",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "COA",
+    description: "Nava",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "CHP",
+    description: "Ocozocoautla de Espinosa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "GRO",
+    description: "Olinalá",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "GUA",
+    description: "Comonfort",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "JAL",
+    description: "Atotonilco el Alto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "MEX",
+    description: "Cuautitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "MIC",
+    description: "Puruándiro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "NAY",
+    description: "Jala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "NLE",
+    description: "Santiago",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "OAX",
+    description: "San Pablo Villa de Mitla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "PUE",
+    description: "Amozoc",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "SIN",
+    description: "La Cruz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "SLP",
+    description: "Fracción el Refugio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "TAM",
+    description: "Ciudad Miguel Alemán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "VER",
+    description: "Veracruz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "17",
+    estate: "ZAC",
+    description: "Jalpa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "COA",
+    description: "Zaragoza",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "CHP",
+    description: "Cintalapa de Figueroa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "GRO",
+    description: "Marquelia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "GUA",
+    description: "Uriangato",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "JAL",
+    description: "Jalostotitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "MEX",
+    description: "Ixtapaluca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "MIC",
+    description: "Yurécuaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "NAY",
+    description: "Ahuacatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "NLE",
+    description: "El cercado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "OAX",
+    description: "Natividad",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "SIN",
+    description: "El rosario",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "SLP",
+    description: "Tamazunchale",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "TAM",
+    description: "Soto la Marina",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "VER",
+    description: "Tierra Blanca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "18",
+    estate: "ZAC",
+    description: "Loreto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "COA",
+    description: "San Buenaventura",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "CHP",
+    description: "Pichucalco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "GRO",
+    description: "Zumpango del Río",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "GUA",
+    description: "Pénjamo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "JAL",
+    description: "Poncitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "MEX",
+    description: "Texcoco de Mora",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "MIC",
+    description: "Huetamo de Núñez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "OAX",
+    description: "Teotitlán de Flores Magón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "SIN",
+    description: "Estación Naranjo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "SLP",
+    description: "Santa María del Río",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "TAM",
+    description: "Ciudad Tula",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "VER",
+    description: "Cosamaloapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "19",
+    estate: "ZAC",
+    description: "Juan Aldama",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "COA",
+    description: "Ciudad Melchor Múzquiz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "CHP",
+    description: "Puerto Madero (San Benito)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "GRO",
+    description: "San Luis de la Loma",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "GUA",
+    description: "Cuerámaro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "JAL",
+    description: "Arandas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "MEX",
+    description: "Toluca de Lerdo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "MIC",
+    description: "Tacámbaro de Codallos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "NLE",
+    description: "Anáhuac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "OAX",
+    description: "Santa María Huatulco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "SIN",
+    description: "Aguaruto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "SLP",
+    description: "El Naranjo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "TAM",
+    description: "Nueva Ciudad Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "20",
+    estate: "VER",
+    description: "Carlos A. Carrillo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "COA",
+    description: "Viesca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "CHP",
+    description: "Pijijiapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "GRO",
+    description: "Petatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "GUA",
+    description: "Empalme Escobedo (Escobedo)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "JAL",
+    description: "Talpa de Allende",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "MEX",
+    description: "Valle de Chalco Solidaridad",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "MIC",
+    description: "Ciudad Lázaro Cárdenas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "NLE",
+    description: "García",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "OAX",
+    description: "San Juan Bautista Cuicatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "SIN",
+    description: "Cosalá",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "TAM",
+    description: "Valle Hermoso",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "21",
+    estate: "VER",
+    description: "Pánuco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "COA",
+    description: "Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "CHP",
+    description: "Reforma",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "GRO",
+    description: "La Unión",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "GUA",
+    description: "San Luis de la Paz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "JAL",
+    description: "Etzatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "MEX",
+    description: "Tejupilco de Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "MIC",
+    description: "Las Guacamayas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "NLE",
+    description: "Ciudad Benito Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "OAX",
+    description: "Villa Sola de Vega",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "SIN",
+    description: "San Ignacio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "22",
+    estate: "VER",
+    description: "Tampico Alto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "COA",
+    description: "Arteaga",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "CHP",
+    description: "Huixtla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "GRO",
+    description: "San Luis San Pedro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "GUA",
+    description: "Valle de Santiago",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "JAL",
+    description: "Sayula",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "MEX",
+    description: "Chalco de Díaz Covarrubias",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "MIC",
+    description: "Jiquilpan de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "OAX",
+    description: "Ocotlán de Morelos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "SIN",
+    description: "Topolobampo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "23",
+    estate: "VER",
+    description: "Tempoal de Sánchez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "COA",
+    description: "Allende",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "CHP",
+    description: "Motozintla de Mendoza",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "GRO",
+    description: "Teloloapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "GUA",
+    description: "Abasolo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "JAL",
+    description: "Ahualulco de Mercado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "MEX",
+    description: "Amatepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "MIC",
+    description: "Tuxpan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "OAX",
+    description: "Villa de Zaachila",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "SIN",
+    description: "Lic. Benito Juárez (Campo Gobierno)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "24",
+    estate: "VER",
+    description: "Tantoyuca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "CHP",
+    description: "Acala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "GRO",
+    description: "Técpan de Galeana",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "GUA",
+    description: "Rincón de Tamayo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "JAL",
+    description: "Autlán de Navarro",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "MIC",
+    description: "Cotija de la Paz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "OAX",
+    description: "Miahuatlán de Porfirio Díaz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "25",
+    estate: "VER",
+    description: "Gutiérrez Zamora",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "GRO",
+    description: "Huitzuco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "GUA",
+    description: "Villagrán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "JAL",
+    description: "Magdalena",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "MEX",
+    description: "Melchor Ocampo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "MIC",
+    description: "Nueva Italia de Ruiz",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "OAX",
+    description: "Unión Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "26",
+    estate: "VER",
+    description: "Platón Sánchez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "GRO",
+    description: "Tixtla de Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "GUA",
+    description: "Yuriria",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "JAL",
+    description: "San Julián",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "MEX",
+    description: "San Vicente Chicoloapan de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "MIC",
+    description: "Cuitzeo del Porvenir",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "OAX",
+    description: "El Camarón",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "27",
+    estate: "VER",
+    description: "Juan Rodríguez Clara",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "28",
+    estate: "GRO",
+    description: "Tepecoacuilco de Trujano",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "28",
+    estate: "GUA",
+    description: "Apaseo el Grande",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "28",
+    estate: "JAL",
+    description: "Cocula",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "28",
+    estate: "MEX",
+    description: "Capulhuac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "28",
+    estate: "OAX",
+    description: "San Pedro Mixtepec -Dto. 22-",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "28",
+    estate: "VER",
+    description: "Huatusco de Chicuellar",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "29",
+    estate: "GRO",
+    description: "San Marcos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "29",
+    estate: "GUA",
+    description: "Purísima de Bustos",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "29",
+    estate: "JAL",
+    description: "El Grullo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "29",
+    estate: "MEX",
+    description: "Juchitepec de Mariano Riva Palacio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "29",
+    estate: "OAX",
+    description: "Santa Cruz Itundujia",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "29",
+    estate: "VER",
+    description: "Ixtaczoquitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "30",
+    estate: "GRO",
+    description: "Azoyú",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "30",
+    estate: "GUA",
+    description: "Salvatierra",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "30",
+    estate: "JAL",
+    description: "San Miguel el Alto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "30",
+    estate: "MEX",
+    description: "Tequixquiac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "30",
+    estate: "OAX",
+    description: "Chahuites",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "30",
+    estate: "VER",
+    description: "Río Blanco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "31",
+    estate: "GRO",
+    description: "Tlapehuala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "31",
+    estate: "GUA",
+    description: "Marfil",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "31",
+    estate: "JAL",
+    description: "Tala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "31",
+    estate: "MEX",
+    description: "Xonacatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "31",
+    estate: "OAX",
+    description: "Heroica Ciudad de Ejutla de Crespo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "31",
+    estate: "VER",
+    description: "Isla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "32",
+    estate: "GRO",
+    description: "San Luis Acatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "32",
+    estate: "GUA",
+    description: "San José Iturbide",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "32",
+    estate: "JAL",
+    description: "La Barca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "32",
+    estate: "MEX",
+    description: "San Mateo Atenco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "32",
+    estate: "OAX",
+    description: "San Pedro Tapanatepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "32",
+    estate: "VER",
+    description: "Cuitláhuac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "33",
+    estate: "GRO",
+    description: "Chilapa de Álvarez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "33",
+    estate: "GUA",
+    description: "Apaseo el Alto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "33",
+    estate: "JAL",
+    description: "Jamay",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "33",
+    estate: "OAX",
+    description: "Vicente Camalote",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "33",
+    estate: "VER",
+    description: "Fortín de las Flores",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "34",
+    estate: "GRO",
+    description: "Tlapa de Comonfort",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "34",
+    estate: "GUA",
+    description: "Ciudad Manuel Doblado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "34",
+    estate: "JAL",
+    description: "Yahualica de González Gallo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "34",
+    estate: "OAX",
+    description: "Villa de Tamazulápam del Progreso",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "34",
+    estate: "VER",
+    description: "Alvarado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "35",
+    estate: "GRO",
+    description: "Tlalixtaquilla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "35",
+    estate: "GUA",
+    description: "Jaral del Progreso",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "35",
+    estate: "JAL",
+    description: "Colotlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "35",
+    estate: "OAX",
+    description: "San Juan Bautista lo de Soto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "35",
+    estate: "VER",
+    description: "José Cardel",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "36",
+    estate: "GRO",
+    description: "Cuajinicuilapa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "36",
+    estate: "GUA",
+    description: "San Diego de la Unión",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "36",
+    estate: "JAL",
+    description: "Cihuatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "36",
+    estate: "MEX",
+    description: "Chiconcuac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "36",
+    estate: "OAX",
+    description: "San Juan Cacahuatepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "36",
+    estate: "VER",
+    description: "Banderilla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "37",
+    estate: "GRO",
+    description: "Huamuxtitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "37",
+    estate: "GUA",
+    description: "Santa Cruz Juventino Rosas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "37",
+    estate: "JAL",
+    description: "Zapotiltic",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "37",
+    estate: "OAX",
+    description: "San Pedro Totolapa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "37",
+    estate: "VER",
+    description: "Paraje Nuevo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "38",
+    estate: "GRO",
+    description: "Cruz Grande",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "38",
+    estate: "GUA",
+    description: "Doctor Mora",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "38",
+    estate: "JAL",
+    description: "Villa Corona",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "38",
+    estate: "OAX",
+    description: "San Miguel el Grande",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "38",
+    estate: "VER",
+    description: "Playa Vicente",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "39",
+    estate: "GRO",
+    description: "Ocotito",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "39",
+    estate: "GUA",
+    description: "Dolores Hgo. Cuna de la Indep. Nal.",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "39",
+    estate: "JAL",
+    description: "Teocaltiche",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "39",
+    estate: "MEX",
+    description: "Almoloya de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "39",
+    estate: "OAX",
+    description: "Zimatlán de Álvarez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "39",
+    estate: "VER",
+    description: "Altotonga",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "40",
+    estate: "GRO",
+    description: "Copala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "40",
+    estate: "MEX",
+    description: "Ocoyoacac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "40",
+    estate: "OAX",
+    description: "San Pablo Huitzo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "40",
+    estate: "VER",
+    description: "Juan Díaz Covarrubias",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "41",
+    estate: "GRO",
+    description: "Zihuatanejo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "41",
+    estate: "JAL",
+    description: "Tequila",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "41",
+    estate: "MEX",
+    description: "Zumpango",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "41",
+    estate: "OAX",
+    description: "San Francisco Telixtlahuaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "41",
+    estate: "VER",
+    description: "Cuichapa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "42",
+    estate: "JAL",
+    description: "El Quince (San José el Quince)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "42",
+    estate: "OAX",
+    description: "Mariscala de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "42",
+    estate: "VER",
+    description: "Santiago Tuxtla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "43",
+    estate: "JAL",
+    description: "San José el Verde (El Verde)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "43",
+    estate: "OAX",
+    description: "Santiago Pinotepa Nacional",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "43",
+    estate: "VER",
+    description: "Huayacocotla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "44",
+    estate: "JAL",
+    description: "Jocotepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "44",
+    estate: "OAX",
+    description: "Santiago Jamiltepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "44",
+    estate: "VER",
+    description: "Paso de Ovejas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "45",
+    estate: "JAL",
+    description: "Tecalitlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "45",
+    estate: "OAX",
+    description: "San Pedro Pochutla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "45",
+    estate: "VER",
+    description: "Catemaco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "46",
+    estate: "JAL",
+    description: "Chapala",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "46",
+    estate: "OAX",
+    description: "Heroica Ciudad de Tlaxiaco",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "46",
+    estate: "VER",
+    description: "Nogales",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "47",
+    estate: "JAL",
+    description: "Ajijic",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "47",
+    estate: "OAX",
+    description: "San Juan Bautista Valle Nacional",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "47",
+    estate: "VER",
+    description: "Las Choapas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "48",
+    estate: "JAL",
+    description: "San Ignacio Cerro Gordo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "48",
+    estate: "OAX",
+    description: "Lagunas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "48",
+    estate: "VER",
+    description: "General Miguel Alemán (Potrero Nuevo)",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "49",
+    estate: "JAL",
+    description: "Zacoalco de Torres",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "49",
+    estate: "OAX",
+    description: "Ciudad Ixtepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "49",
+    estate: "VER",
+    description: "Coatzintla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "50",
+    estate: "JAL",
+    description: "Huejuquilla el Alto",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "50",
+    estate: "OAX",
+    description: "Santiago Juxtlahuaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "50",
+    estate: "VER",
+    description: "Ángel R. Cabada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "51",
+    estate: "JAL",
+    description: "Villa Hidalgo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "51",
+    estate: "OAX",
+    description: "San Sebastián Tecomaxtlahuaca",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "51",
+    estate: "VER",
+    description: "San Rafael",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "52",
+    estate: "JAL",
+    description: "Unión de San Antonio",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "52",
+    estate: "OAX",
+    description: "Asunción Nochixtlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "52",
+    estate: "VER",
+    description: "Tlacojalpan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "53",
+    estate: "JAL",
+    description: "Las Pintitas",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "53",
+    estate: "OAX",
+    description: "San Francisco Ixhuatán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "53",
+    estate: "VER",
+    description: "Cosoleacaque",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "54",
+    estate: "JAL",
+    description: "Tamazula de Gordiano",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "54",
+    estate: "OAX",
+    description: "San Blas Atempa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "54",
+    estate: "VER",
+    description: "Lerdo de Tejada",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "55",
+    estate: "JAL",
+    description: "Acatlán de Juárez",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "55",
+    estate: "OAX",
+    description: "Santo Domingo Tehuantepec",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "55",
+    estate: "VER",
+    description: "Tihuatlán",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "56",
+    estate: "JAL",
+    description: "Valle de Guadalupe",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "56",
+    estate: "OAX",
+    description: "Cuilápam de Guerrero",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "56",
+    estate: "VER",
+    description: "Atoyac",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "57",
+    estate: "OAX",
+    description: "El Rosario",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "57",
+    estate: "VER",
+    description: "Huiloapan de Cuauhtémoc",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "58",
+    estate: "OAX",
+    description: "Santa Lucia del Camino",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "58",
+    estate: "VER",
+    description: "Cazones de Herrera",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "59",
+    estate: "OAX",
+    description: "San Antonio de la Cal",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "59",
+    estate: "VER",
+    description: "Yecuatla",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "60",
+    estate: "VER",
+    description: "Soledad de Doblado",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "61",
+    estate: "VER",
+    description: "Cerro Azul",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "62",
+    estate: "VER",
+    description: "Tezonapa",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "66",
+    estate: "VER",
+    description: "Sihuapan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "67",
+    estate: "VER",
+    description: "El Higo",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "68",
+    estate: "VER",
+    description: "Paso del Macho",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  },
+  {
+    locality: "69",
+    estate: "VER",
+    description: "Tlapacoyan",
+    start_validity_date: "2022-01-01",
+    end_validity_date: null
+  }
+])

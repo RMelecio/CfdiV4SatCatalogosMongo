@@ -1,0 +1,39 @@
+use("4Invoices");
+
+db.createCollection("states", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi estates - c_Estado",
+      required: [
+        "estate",
+        "country",
+        "state_name",
+        "start_validity_date"
+      ],
+      properties: {
+        estate: {
+          bsonType: "string",
+          minLength: 3,
+          maxLength: 3
+        },
+        country: {
+          bsonType: "string",
+          minLength: 3,
+          maxLength: 3
+        },
+        state_name: {
+          bsonType: "string",
+          minLength: 3,
+          maxLength: 3
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

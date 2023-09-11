@@ -1,0 +1,37 @@
+use("4Invoices");
+
+db.createCollection("municipalities", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi municipalities - c_Municipio",
+      required: [
+        "municipality",
+        "estate",
+        "description",
+        "start_validity_date"
+      ],
+      properties: {
+        municipality: {
+          bsonType: "string",
+          minLength: 2,
+          maxLength: 2
+        },
+        estate: {
+          bsonType: "string",
+          minLength: 3,
+          maxLength: 3
+        },
+        description: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});

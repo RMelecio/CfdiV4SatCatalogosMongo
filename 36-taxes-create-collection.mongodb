@@ -1,0 +1,41 @@
+use("4Invoices");
+
+db.createCollection("taxes", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      title: "CFDi taxes - c_Impuesto",
+      required: [
+        "tax",
+        "description",
+        "retention",
+        "transfer",
+        "local_or_federal",
+        "start_validity_date"
+      ],
+      properties: {
+        tax: {
+          bsonType: "string",
+        },
+        description: {
+          bsonType: "string",
+        },
+        retention: {
+          bsonType: "string",
+        },
+        transfer: {
+          bsonType: "string",
+        },
+        local_or_federal: {
+          bsonType: "string",
+        },
+        start_validity_date: {
+          bsonType: "timestamp",
+        },
+        end_validity_date: {
+          bsonType: "timestamp",
+        },
+      }
+    }
+  }
+});
